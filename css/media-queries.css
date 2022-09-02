@@ -1,33 +1,51 @@
 @import url(./style.css);
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width:576px) {
-  
-}
+@media (min-width:576px) {}
 
 /* Medium devices (tablets, 768px and up */
-@media (min-width:768px) {
-  /*body {
-    grid-template-columns:  repeat(2, 1fr);
-    grid-template-areas: "header header"
-                         "nav main"
-                         "footer footer";
-  }*/
+@media screen and (min-width:768px) {
+  
+  .label {
+
+    display: none;
+
+}
+
+.content_nav {
+
+  display: block;
+  grid-template: none;
+  max-height: 100%;
+  grid-column: 3;
+  margin: 0;
+  padding: 0;
+  transition: none;
+  overflow: visible;
+
+}
+
+.content_nav li {
+
+  display: inline-block;
+  align-items: center;
+  padding: 10px;
+
+}
+
+
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width:992px) {
-  /* body {
-    grid-template-rows: auto 1fr auto;
-    grid-template-columns: minmax(150px,200px) 1fr minmax(150px, 200px);
-    grid-template-areas: "header header header"
-                         "nav main aside"
-                         "footer footer footer";
-  }
-  aside {
-    display: grid;
-  } */
-}
+@media (min-width:992px) {}
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width:1200px) {}
+@media (min-width:1200px) {
+
+  .container {
+
+    width: 1200px;
+
+  }
+
+}

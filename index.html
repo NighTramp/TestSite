@@ -4,21 +4,35 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tesk site</title>
-    <link rel="stylesheet" href="./css/null-style.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/media-queries.css">
   </head>
-  <body class="container noise">
-    <header class="container">Header
-      <nav class="container">
-        Меню
-      </nav>
+  <body class="noise">
+    <header>
+      <div class="header_container">
+        <nav class="nav_checkbox">
+            <a href="#" class="logo"><h2>LOGO</h2></a>
+            <input type="checkbox" id="tab-nav" class="tab-nav">
+            <label for="tab-nav" class="label">
+                <div class="burger"></div>
+                <div class="burger"></div>
+                <div class="burger"></div>
+            </label>
+            <ul class="content_nav">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">SERVICE</a></li>
+                <li><a href="#">LOGIN</a></li>
+            </ul>
+        </nav>
+    </div>
     </header>
-    <aside class="container">Aside</aside>
-    <main class="container">
-      <div class="content">Content</div>
-      <div class="content">Content-Content</div>
+    <main class="main_content">
+      <div class="element" id="c1">Content</div>
+      <div class="element" id="c2">Content-Content</div>
+      <div class="element" id="c3">Content-Content-Content</div>
     </main>
-    <footer class="container">Footer</footer>
+    <footer class="">© 2022 NighTramp</footer>
   </body>
 </html>

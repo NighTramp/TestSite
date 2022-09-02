@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
 
 :root {
+
+  --transparent: rgba(14, 19, 25, 0.404);
   --accent-0:#fdfcfc;
   --accent-1:#0e1319;
   --accent-3:#19112f;
@@ -13,19 +15,42 @@
   --element-gradient: linear-gradient(to right, var(--element-accent), var(--dark-accent));
   --bg-gradient: linear-gradient(to top right, var(--bg-accent), var(--element-accent));
   */
+
 }
 
-* {
-  margin: 0;
-  box-sizing: border-box;
-}
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { 
+/* article, details, figcaption, figure, footer, header, hgroup, menu, nav, section { 
+  
   display: block;
+
+} */
+* {
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
 }
+
 body {
+
   font-family: 'Rubik', sans-serif;
   background: var(--accent-0);
+
+}
+
+a {
+
+  text-decoration: none;
+
+}
+
+li {
+
+  list-style: none;
+
 }
 .noise {
+
   background-image: url(../sources/noise-2.png);
+
 }

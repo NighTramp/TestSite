@@ -1,39 +1,159 @@
-body {
-display: grid;
-height: 100vh;
-grid-template-columns: 1fr;
-grid-template-areas: "header"
-                     "nav"
-                     "main"
-                     "footer";
+@import url(./null-style.css);
+
+header, footer {
+
+    width: 100%;
+    height: auto;
+
 }
 
 header {
+
+    background-color: var(--accent-1);
     grid-area: header;
-}
+    padding: 0px 10px;
 
-nav {
-    grid-area: nav;
-    background-color: var(--accent-4);
-}
-
-aside {
-    grid-area: aside;
-    background-color: var(--accent-5);
-    display: none;
-}
-
-main {
-    grid-area: main;
-    background-color: var(--accent-6);
 }
 
 footer {
+
+    background-color: var(--accent-1);
     grid-area: footer;
+    color: var(--accent-0);
+
 }
 
-header, footer {
-    background-color: var(--accent-1);
+main {
+
+    display: none;
+    grid-area: main;
+    background-color: var(--accent-6);
+
+}
+
+.header_container {
+
     width: 100%;
-    height: auto;
+    margin: auto;
+
+}
+
+.nav_checkbox {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 10px 0px;
+
+}
+
+.nav_checkbox input:checked ~ .content_nav {
+
+    max-height: 500px;
+
+}
+
+.logo {
+
+    text-decoration: none;
+    color: var(--accent-0);
+    padding: 10px 10px;
+
+}
+
+.tab-nav {
+
+    outline: none;
+    display: none;
+
+}
+
+.label{
+
+    display: grid;
+    cursor: pointer;
+    grid-column: 3;
+    padding-right: 10px;
+
+}
+
+.burger {
+
+    width: 35px;
+    height: 5px;
+    background-color: var(--accent-0);
+    margin-top: 5px;
+
+}
+
+.content_nav{
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column: 1/4;
+    text-align: center;
+    max-height: 0;
+    overflow: hidden;
+    transition: all ease-in-out 0.6s;
+
+}
+
+
+.content_nav li{
+
+    padding: 15px 0px;
+
+}
+
+.content_nav li a {
+
+    text-decoration: none;
+    color: var(--accent-0);
+    position: relative;
+
+}
+
+.content_nav li a::after {
+
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: var(--accent-0);
+    position: absolute;
+    left: 0;
+    right: 0;
+    transform-origin: right;
+    transform: scale(0, 1);
+    transition: transform ease-in-out 0.5s;
+
+}
+
+.content_nav li a:hover::after {
+
+    transform: scale(1, 1);
+
+}
+
+main {
+
+    height: 120vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
+}
+.main_content {
+
+    display: block;
+    padding: 10px;
+
+}
+.main_content > .element {
+
+    background-color: var(--transparent);
+    margin: 10px;
+
 }
