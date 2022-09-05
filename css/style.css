@@ -9,9 +9,11 @@ header, footer {
 
 header {
 
+    display: grid;
     background-color: var(--accent-1);
     grid-area: header;
-    padding: 0px 10px;
+    position: fixed;
+    z-index: 1;
 
 }
 
@@ -27,7 +29,6 @@ main {
 
     display: none;
     grid-area: main;
-    background-color: var(--accent-6);
 
 }
 
@@ -134,9 +135,8 @@ main {
 
 }
 
-main {
+/* main {
 
-    height: 120vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -155,5 +155,27 @@ main {
 
     background-color: var(--transparent);
     margin: 10px;
+
+} */
+
+/* ========================================================= */
+
+main {
+
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+
+}
+
+.container {
+
+    display: grid;
+    grid-template-columns: 1em 1fr 1em;
+
+}
+
+.content {
+
+    grid-column: 2;
 
 }
